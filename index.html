@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morales Motors | Premium Car Dealership</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <div class="logo" aria-label="Morales Motors home">🏎️ Morales Motors</div>
+        <nav aria-label="Main Navigation">
+            <a href="index.html">Home</a>
+            <a href="#inventory">Inventory</a>
+            <a href="#about">About Us</a>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="hero" aria-label="Welcome">
+            <h1>Find Your Dream Ride</h1>
+            <p>Explore the finest collection of luxury and sports vehicles from BMW, Audi, and Mercedes-Benz.</p>
+            <a href="#inventory" class="btn">View Inventory</a>
+        </section>
+
+        <section id="about" class="details-section">
+            <h2>About Morales Motors</h2>
+            <div class="details-grid">
+                <div class="info-block">
+                    <h3>Our History</h3>
+                    <p>Founded in 2018, Morales Motors has grown to become the region's premier luxury vehicle provider. We specialize in sourcing rare sports cars, top-tier luxury sedans, and high-performance electric vehicles. Every vehicle in our showroom undergoes a rigorous 150-point inspection by certified master technicians.</p>
+                </div>
+                <div class="info-block">
+                    <h3>Showroom Hours</h3>
+                    <ul class="hours-list">
+                        <li><strong>Monday – Friday:</strong> 8:00 AM – 7:00 PM</li>
+                        <li><strong>Saturday:</strong> 9:00 AM – 5:00 PM</li>
+                        <li><strong>Sunday:</strong> Closed</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Inventory Section -->
+        <section id="inventory" class="inventory" aria-labelledby="inventory-heading">
+            <h2 id="inventory-heading">Featured Inventory</h2>
+            <div class="car-grid">
+                
+                <!-- Car Card 1: BMW -->
+                <div class="car-card" data-car-id="bmw">
+                    <div class="gallery-container">
+                        <div class="car-image-window" role="img" aria-label="BMW M4 Competition Gallery View">
+                            <span class="gallery-emoji" aria-hidden="true">🇩🇪</span>
+                            <span class="image-label">Front Profile</span>
+                        </div>
+                        <div class="gallery-controls">
+                            <button class="nav-img-btn prev-btn" aria-label="Previous image for BMW M4">◀</button>
+                            <button class="nav-img-btn next-btn" aria-label="Next image for BMW M4">▶</button>
+                        </div>
+                    </div>
+                    <h3>BMW M4 Competition</h3>
+                    <p class="price">Price: $78,100</p>
+                    <button class="test-drive-btn" aria-label="Book a test drive for the BMW M4 Competition">Book Test Drive</button>
+                </div>
+
+                <!-- Car Card 2: Audi -->
+                <div class="car-card" data-car-id="audi">
+                    <div class="gallery-container">
+                        <div class="car-image-window" role="img" aria-label="Audi RS e-tron GT Gallery View">
+                            <span class="gallery-emoji" aria-hidden="true">⚡</span>
+                            <span class="image-label">Exterior View</span>
+                        </div>
+                        <div class="gallery-controls">
+                            <button class="nav-img-btn prev-btn" aria-label="Previous image for Audi RS e-tron">◀</button>
+                            <button class="nav-img-btn next-btn" aria-label="Next image for Audi RS e-tron">▶</button>
+                        </div>
+                    </div>
+                    <h3>Audi RS e-tron GT</h3>
+                    <p class="price">Price: $147,500</p>
+                    <button class="test-drive-btn" aria-label="Book a test drive for the Audi RS e-tron GT">Book Test Drive</button>
+                </div>
+
+                <!-- Car Card 3: Mercedes-Benz -->
+                <div class="car-card" data-car-id="mercedes">
+                    <div class="gallery-container">
+                        <div class="car-image-window" role="img" aria-label="Mercedes-AMG G 63 Gallery View">
+                            <span class="gallery-emoji" aria-hidden="true">🚙</span>
+                            <span class="image-label">Side Profile</span>
+                        </div>
+                        <div class="gallery-controls">
+                            <button class="nav-img-btn prev-btn" aria-label="Previous image for Mercedes-AMG G 63">◀</button>
+                            <button class="nav-img-btn next-btn" aria-label="Next image for Mercedes-AMG G 63">▶</button>
+                        </div>
+                    </div>
+                    <h3>Mercedes-AMG G 63</h3>
+                    <p class="price">Price: $183,000</p>
+                    <button class="test-drive-btn" aria-label="Book a test drive for the Mercedes-AMG G 63">Book Test Drive</button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Morales Motors. Built for performance and accessibility.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
