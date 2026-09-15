@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #000000; /* Pure Black Background */
+    color: #f0fff4;            /* Soft Mint-White text for contrast */
+    line-height: 1.6;
+}
+
+*:focus-visible {
+    outline: 3px solid #aaf0d1; /* High-Visibility Mint focus ring */
+    outline-offset: 3px;
+}
+
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    background: #e50914; /* Red action indicator */
+    color: white;
+    padding: 10px 20px;
+    z-index: 100;
+    text-decoration: none;
+    transition: top 0.2s;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #111111; /* Off-black panel */
+    border-bottom: 2px solid #e50914; /* Crimson Red accents */
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #aaf0d1; /* Bold Mint Logo text */
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 5px;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #e50914; /* Shifts to Red on interactive hover */
+    text-decoration: underline;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #111111 0%, #000000 100%);
+    border-bottom: 1px solid #222;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #aaf0d1; /* Bright Mint Headline */
+}
+
+.btn {
+    display: inline-block;
+    background: #e50914; /* Crimson Red Call-to-action */
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #b8070f;
+}
+
+.details-section {
+    padding: 60px 50px;
+    background-color: #111111;
+    max-width: 1200px;
+    margin: 40px auto;
+    border-radius: 8px;
+    border: 1px solid #e50914; /* Red panel frames */
+}
+
+.details-section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #aaf0d1; /* Mint accent separator lines */
+    padding-bottom: 10px;
+    color: #aaf0d1;
+}
+
+.info-block p {
+    color: #e0f7fa;
+}
+
+.hours-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #222;
+    color: #ffffff;
+}
+
+.hours-list strong {
+    color: #aaf0d1; /* Highlighted Mint days */
+}
+
+.inventory {
+    padding: 50px;
+    text-align: center;
+}
+
+.inventory h2 {
+    margin-bottom: 40px;
+    font-size: 32px;
+    color: #aaf0d1;
+}
+
+.car-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.car-card {
+    background: #111111;
+    padding: 20px;
+    border-radius: 10px;
+    width: 280px;
+    text-align: left;
+    border: 1px solid #333;
+}
+
+.gallery-container {
+    position: relative;
+    background: #000000;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    border: 1px solid #aaf0d1; /* Mint Gallery framing */
+}
+
+.car-image-window {
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.image-label {
+    font-size: 12px;
+    color: #aaf0d1;
+    background: rgba(0,0,0,0.7);
+    padding: 2px 8px;
+    border-radius: 10px;
+}
+
+.gallery-controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    pointer-events: none;
+}
+
+.nav-img-btn {
+    pointer-events: auto;
+    background: rgba(0, 0, 0, 0.85);
+    color: #aaf0d1;
+    border: 1px solid #aaf0d1;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.nav-img-btn:hover {
+    background: #e50914; /* Red button change state */
+    color: white;
+    border-color: #e50914;
+}
+
+.car-card h3 {
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.car-card .price {
+    color: #aaf0d1; /* Mint highlights on financial fields */
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.test-drive-btn {
+    width: 100%;
+    background: #e50914; /* Vivid Red target button */
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.test-drive-btn:hover {
+    background: #b8070f;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    background: #111111;
+    color: #666;
+    margin-top: 60px;
+    border-top: 1px solid #222;
+}
