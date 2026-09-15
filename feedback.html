@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Give Feedback | Turbo Motors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#feedback-content" class="skip-link">Skip to form fields</a>
+
+    <header>
+        <div class="logo" aria-label="Turbo Motors home">🏎️ Turbo Motors</div>
+        <nav aria-label="Main Navigation">
+            <a href="index.html">Home</a>
+            <a href="index.html#inventory">Inventory</a>
+            <a href="index.html#about">About Us</a>
+            <a href="feedback.html" aria-current="page">Give Feedback</a>
+        </nav>
+    </header>
+
+    <main id="feedback-content">
+        <section class="feedback-section" aria-labelledby="feedback-heading">
+            <h1 id="feedback-heading">We Value Your Feedback</h1>
+            <p class="section-desc">Please share your experience with us. All fields are required.</p>
+            
+            <form id="feedbackForm" class="feedback-form" novalidate>
+                <!-- Name Field -->
+                <div class="form-group">
+                    <label for="userName">Full Name <span class="required" aria-hidden="true">*</span></label>
+                    <input type="text" id="userName" name="name" required aria-required="true" autocomplete="name">
+                </div>
+
+                <!-- Email Field -->
+                <div class="form-group">
+                    <label for="userEmail">Email Address <span class="required" aria-hidden="true">*</span></label>
+                    <input type="email" id="userEmail" name="email" required aria-required="true" autocomplete="email">
+                </div>
+
+                <!-- Feedback Text Field -->
+                <div class="form-group">
+                    <label for="userMessage">Your Feedback <span class="required" aria-hidden="true">*</span></label>
+                    <textarea id="userMessage" name="message" rows="6" required aria-required="true"></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="submit-btn">Submit Feedback</button>
+            </form>
+            
+            <!-- Accessible status notification box -->
+            <div id="formStatus" class="form-status" role="status" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Turbo Motors. Built for performance and accessibility.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
