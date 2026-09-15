@@ -1,0 +1,31 @@
+        <!-- Feedback Form Section -->
+        <section id="feedback" class="feedback-section" aria-labelledby="feedback-heading">
+            <h2 id="feedback-heading">We Value Your Feedback</h2>
+            <p class="section-desc">Have a question or want to share your experience? Drop us a line below.</p>
+            
+            <form id="feedbackForm" class="feedback-form" novalidate>
+                <!-- Name Field -->
+                <div class="form-group">
+                    <label for="userName">Full Name <span class="required" aria-hidden="true">*</span></label>
+                    <input type="text" id="userName" name="name" required aria-required="true" autocomplete="name">
+                </div>
+
+                <!-- Email Field -->
+                <div class="form-group">
+                    <label for="userEmail">Email Address <span class="required" aria-hidden="true">*</span></label>
+                    <input type="email" id="userEmail" name="email" required aria-required="true" autocomplete="email">
+                </div>
+
+                <!-- Feedback Text Field -->
+                <div class="form-group">
+                    <label for="userMessage">Your Feedback <span class="required" aria-hidden="true">*</span></label>
+                    <textarea id="userMessage" name="message" rows="5" required aria-required="true"></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="submit-btn">Submit Feedback</button>
+            </form>
+            
+            <!-- Live region for accessible success messages -->
+            <div id="formStatus" class="form-status" role="status" aria-live="polite"></div>
+        </section>
